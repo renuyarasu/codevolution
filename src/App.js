@@ -1,10 +1,11 @@
 import './App.css';
+import { Greet } from './components/Greet';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Codevolution</h1>
+       <Greet/>
       </header>
     </div>
   );
