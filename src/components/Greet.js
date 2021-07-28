@@ -1,14 +1,27 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-class Greet extends React.Component {
-    state = {  }
-    render() { 
-        return (  
-            // <h1>Class Component with Props</h1>
-            <h1>{this.props.name} a.k.a {this.props.lname}</h1>
-
+class Greet extends Component {
+    constructor() {
+        super()
+        this.state = {
+            message: 'Welcome Visitors'
+        }
+    }
+    changeMessage() {
+        this.setState(
+            {
+                message: 'Thank You for Subscribing'
+            }
+        )
+    }
+    render() {
+        return (
+            <div>
+                <h1>{this.state.message}</h1>
+                <button style={{ padding: '20px', cursor: 'pointer', fontSize: '16px', fontWeight: 'bold' }} onClick={() => this.changeMessage()}>Subscribe</button>
+            </div>
         );
     }
 }
- 
+
 export default Greet;
