@@ -1,11 +1,11 @@
 import './App.css';
-import Greet from './components/Greet';
+import Count from './components/Count';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Greet />
+        <Count />
       </header>
     </div>
   );
