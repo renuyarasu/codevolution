@@ -1,11 +1,11 @@
 import './App.css';
-import Greet from './components/Greet';
+import Click from './components/Click';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Greet name='VedaGna' lName='Yarasu' />
+        <Click/>
       </header>
     </div>
   );
