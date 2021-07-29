@@ -17,7 +17,8 @@ class Click extends Component {
         return (
             <div>
                 <h1>{this.state.message}</h1>
-                <button onClick={this.clickHandler.bind(this)} style={{ padding: '10px 20px', cursor: 'pointer', fontWeight: 'bold' }}>Click</button>
+                {/* <button onClick={this.clickHandler.bind(this)}>Click</button> */}
+                <button onClick={() => this.clickHandler()}>Click</button>
             </div >
         )
     }
