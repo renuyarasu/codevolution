@@ -1,11 +1,11 @@
 import './App.css';
-import Click from './components/Click';
+import Parent from './components/Parent';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Click/>
+        <Parent/>
       </header>
     </div>
   );
