@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-export default function Click() {
-    function clicked(params) {
-        alert('Clicked')
+export class Click extends Component {
+    clicked(){
+        alert('clicked')
     }
-    return (
-        <div>
-            <button onClick={clicked}>Click</button>
-        </div>
-    )
+    render() {
+        return (
+            <div>
+                 <button onClick={this.clicked}>Click</button>
+            </div>
+        )
+    }
 }
+
+export default Click
