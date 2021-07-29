@@ -1,11 +1,11 @@
 import './App.css';
-import Count from './components/Count';
+import Greet from './components/Greet';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Count />
+        <Greet name='VedaGna' lName='Yarasu' />
       </header>
     </div>
   );
