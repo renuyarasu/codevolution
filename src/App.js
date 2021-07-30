@@ -1,11 +1,11 @@
 import './App.css';
-import UserGreet from './components/UserGreet';
+import Names from './components/Names';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <UserGreet/>
+        <Names/>
       </header>
     </div>
   );
