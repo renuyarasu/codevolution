@@ -12,11 +12,14 @@ export class UserGreet extends Component {
 
     render() {
 
-        // Conditional Rendering: Ternary operation approach
-        return(
-            this.state.isLoggedIn ? <h1>Welcome VedaGna</h1> : <h1>Welcome Guest</h1>
-        )
+        // Conditional Rendering: Short Circuit Logical Operator
 
+        return this.state.isLoggedIn && <h1>Welcome VedaGna</h1>
+
+        // Conditional Rendering: Ternary operation approach
+       /*  return(
+            this.state.isLoggedIn ? <h1>Welcome VedaGna</h1> : <h1>Welcome Guest</h1>
+        ) */
 
         // Conditional Rendering: Element Variables approach
         /* let message
