@@ -1,11 +1,11 @@
 import './App.css';
-import Styling from './components/Styling';
+import Form from './components/Form';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Styling />
+        <Form />
       </header>
     </div>
   );
