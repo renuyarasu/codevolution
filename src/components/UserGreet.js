@@ -4,24 +4,31 @@ export class UserGreet extends Component {
 
     constructor(props) {
         super(props)
-    
+
         this.state = {
-             isLoggedIn: true
+            isLoggedIn: true
         }
     }
-    
+
     render() {
-        if(this.state.isLoggedIn){
-            return <h1>Welcome VedaGna</h1>
-        }else{
-            return <h1>Welcome Guest</h1>
+        let message
+        if (this.state.isLoggedIn) {
+            message = <h1>Welcome VedaGna</h1>
+        } else {
+            message = <h1>Welcome Guest</h1>
         }
-        /* return (
-            <div>
-                <h1>Welcome VedaGna</h1>
-                <h1>Welcome Guest</h1>
-            </div>
-        ) */
+        return <div>{message}</div>
+        /*  if(this.state.isLoggedIn){
+             return <h1>Welcome VedaGna</h1>
+         }else{
+             return <h1>Welcome Guest</h1>
+         }
+          return (
+             <div>
+                 <h1>Welcome VedaGna</h1>
+                 <h1>Welcome Guest</h1>
+             </div>
+         ) */
     }
 }
 
