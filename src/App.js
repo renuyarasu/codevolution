@@ -1,11 +1,11 @@
 import './App.css';
-import Parent from './components/Parent';
+import UserGreet from './components/UserGreet';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Parent/>
+        <UserGreet/>
       </header>
     </div>
   );
