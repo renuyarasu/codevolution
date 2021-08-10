@@ -1,11 +1,11 @@
 import './App.css';
-import Form from './components/Form';
+import LifecycleA from './components/LifecycleA';
 
 function App() {
     return (
         <div className="App">
             <header className="App-header">
-               <Form/>
+              <LifecycleA/>
             </header>
         </div>
     );
