@@ -1,11 +1,11 @@
 import './App.css';
-import ParentComp from './components/ParentComp';
+import RefDemo from './components/RefDemo';
 
 function App() {
     return (
         <div className="App">
             <header className="App-header">
-              <ParentComp/>
+              <RefDemo/>
             </header>
         </div>
     );
