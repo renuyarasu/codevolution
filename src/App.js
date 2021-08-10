@@ -1,11 +1,11 @@
 import './App.css';
-import FragmentDemo from './components/FragmentDemo';
+import Table from './components/Table';
 
 function App() {
     return (
         <div className="App">
             <header className="App-header">
-              <FragmentDemo/>
+              <Table/>
             </header>
         </div>
     );
