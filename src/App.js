@@ -1,11 +1,11 @@
 import './App.css';
-import RefDemo from './components/RefDemo';
+import FocusInput from './components/FocusInput';
 
 function App() {
     return (
         <div className="App">
             <header className="App-header">
-              <RefDemo/>
+                <FocusInput />
             </header>
         </div>
     );
