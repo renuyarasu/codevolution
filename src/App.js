@@ -1,11 +1,11 @@
 import './App.css';
-import FocusInput from './components/FocusInput';
+import ForwardParentInput from './components/ForwardParentInput';
 
 function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <FocusInput />
+               <ForwardParentInput/>
             </header>
         </div>
     );
