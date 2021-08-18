@@ -1,12 +1,10 @@
 import './App.css';
-import ForwardParentInput from './components/ForwardParentInput';
+import PortalsDemo from './components/PortalsDemo';
 
 function App() {
     return (
         <div className="App">
-            <header className="App-header">
-               <ForwardParentInput/>
-            </header>
+            <PortalsDemo/>
         </div>
     );
 }
