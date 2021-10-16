@@ -4,7 +4,7 @@ import { FRInput } from './FRInput'
 export class FRParentInput extends Component {
     constructor(props) {
         super(props)
-        this.inputRef = React.createRef()
+        this.inputRef = React.createRef()        
     }
     clickHandler = () => {
         this.inputRef.current.focus()
@@ -12,7 +12,7 @@ export class FRParentInput extends Component {
     render() {
         return (
             <div>
-                <FRInput ref={this.inputRef} />
+                <FRInput ref={this.inputRef}/>
                 <button onClick={this.clickHandler}>Focus Input</button>
             </div>
         )

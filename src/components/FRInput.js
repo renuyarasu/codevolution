@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 
-export const FRInput = React.forwardRef((pros, ref) => {
+export const FRInput = React.forwardRef((props, ref) => {
     return (
         <div>
             <input type="text" ref={ref}/>
