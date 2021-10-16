@@ -1,11 +1,11 @@
 import './App.css';
-import PortalsDemo from './components/PortalsDemo';
-
+import FRParentInput from './components/FRParentInput';
 function App() {
     return (
         <div className="App">
-            <PortalsDemo/>
+            <FRParentInput/>
         </div>
     );
 }
+
 export default App;
