@@ -1,9 +1,11 @@
 import './App.css';
-import PortalsDemo from './components/PortalsDemo';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 function App() {
     return (
         <div className="App">
-            <PortalsDemo/>
+            <ClickCounter />
+            <HoverCounter />
         </div>
     );
 }
