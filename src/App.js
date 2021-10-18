@@ -6,8 +6,8 @@ export class App extends Component {
     render() {
         return (
             <div className="App">
-                <ClickCounter />
-                <HoverCounter />
+                <ClickCounter name='VedaGna'/>
+                <HoverCounter name='VedaGna' />
             </div>
         )
     }
