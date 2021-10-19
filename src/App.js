@@ -10,7 +10,7 @@ export class App extends Component {
             <div className="App">
                 <RenderPropsClickCounter/>
                 <RenderPropsHoverCounter/>
-                <User name='VedaGna'/>
+                <User name={() => 'VedaGna'}/>
             </div>
         )
     }
