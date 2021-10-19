@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
-class PostForm extends Component {
+export class PostForm extends Component {
     constructor(props) {
         super(props)
 
@@ -11,30 +11,30 @@ class PostForm extends Component {
             body: '',
         }
     }
-    changeHandler = e => {
+    onChangeHanler = e => {
         this.setState({ [e.target.name]: e.target.value })
     }
-    onSubmitHandler = e => {
+    onSubmithandler = e => {
         e.preventDefault()
         console.log(this.state);
-        axios.get('https://jsonplaceholder.typicode.com/posts', this.state)
-            .then(response => {
-                console.log(response);
-                this.setState({ posts: response.data })
-            })
-            .catch(error => {
-                console.log(error);
-                this.setState({ errorMsg: 'Error retrieving data' })
-            })
+        axios.post('https://jsonplaceholder.typicode.com/posts', this.state)
+        .then(response => {
+            console.log(response);
+            this.setState({ posts: response.data })
+        })
+        .catch(error => {
+            console.log(error);
+            this.setState({ errorMsg: 'Error retrieving data' })
+        })
     }
     render() {
         const { userId, title, body } = this.state
         return (
             <div>
-                <form onSubmit={this.onSubmitHandler}>
-                    <div><input type="text" name="userId" value={userId} onChange={this.changeHandler} /></div>
-                    <div><input type="text" name="title" value={title} onChange={this.changeHandler} /></div>
-                    <div><input type="text" name="body" value={body} onChange={this.changeHandler} /></div>
+                <form onSubmit={this.onSubmithandler}>
+                    <div><input type="text" name="userId" value={userId} onChange={this.onChangeHanler} /></div>
+                    <div><input type="text" name="title" value={title} onChange={this.onChangeHanler} /></div>
+                    <div><input type="text" name="body" value={body} onChange={this.onChangeHanler} /></div>
                     <button type="submit">Submit</button>
                 </form>
             </div>
