@@ -9,8 +9,9 @@ export class App extends Component {
     render() {
         return (
             <div className="App">
-                <Counter render={(count, increaseCount) => <RenderPropsClickCounter count={count} increaseCount={increaseCount} />} />
-                <Counter render={(count, increaseCount) => <RenderPropsHoverCounter count={count} increaseCount={increaseCount} />} />
+
+                <Counter>{(count, increaseCount) => <RenderPropsClickCounter count={count} increaseCount={increaseCount} />}</Counter>
+                <Counter>{(count, increaseCount) => <RenderPropsHoverCounter count={count} increaseCount={increaseCount} />}</Counter>
                 {/* <RenderPropsClickCounter/>
                 <RenderPropsHoverCounter/>
                 <User render={(isLoggedIn) => isLoggedIn ? 'VedaGna' : 'Guest'}/> */}
