@@ -7,9 +7,9 @@ export class App extends Component {
     render() {
         return (
             <div className="App">
-                <UserProvider value='VedaGna'>
+                {/* <UserProvider value='VedaGna'> */}
                     <ComponentC />
-                </UserProvider>
+                {/* </UserProvider> */}
 
             </div>
         )
