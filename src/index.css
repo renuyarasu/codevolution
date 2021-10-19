@@ -9,8 +9,8 @@ body {
 .App{
   position: absolute;
   left: 50%;
-  top: 0%;
-  transform: translate(-50%, 0%);
+  top: 50%;
+  transform: translate(-50%, -50%);
   color: beige;
 }
 code {
@@ -21,4 +21,3 @@ button {
  font-weight: bold;
  cursor: pointer;
 }
-form div{padding-bottom: 10px;}
