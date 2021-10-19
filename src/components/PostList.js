@@ -10,7 +10,7 @@ export class PostList extends Component {
         }
     }
     componentDidMount() {
-        axios.get('https://jsonplaceholder.typicode.com/possts')
+        axios.get('https://jsonplaceholder.typicode.com/posts')
             .then(response => {
                 console.log(response);
                 this.setState({ posts: response.data })

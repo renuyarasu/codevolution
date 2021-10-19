@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './App.css';
+import PostForm from './components/PostForm';
 import PostList from './components/PostList';
 
 export class App extends Component {
@@ -7,7 +8,8 @@ export class App extends Component {
         return (
             <div className="App">
                 <h1>HTTP and React</h1>
-                <PostList/>
+                <PostForm/>
+                {/* <PostList/> */}
             </div>
         )
     }
