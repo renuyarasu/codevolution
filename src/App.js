@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './App.css';
+import Counter from './components/Counter';
 import RenderPropsClickCounter from './components/RenderPropsClickCounter';
 import RenderPropsHoverCounter from './components/RenderPropsHoverCounter';
 import User from './components/User';
@@ -8,9 +9,11 @@ export class App extends Component {
     render() {
         return (
             <div className="App">
-                <RenderPropsClickCounter/>
+                <Counter render={(count, increaseCount) => <RenderPropsClickCounter count={count} increaseCount={increaseCount} />} />
+                <Counter render={(count, increaseCount) => <RenderPropsHoverCounter count={count} increaseCount={increaseCount} />} />
+                {/* <RenderPropsClickCounter/>
                 <RenderPropsHoverCounter/>
-                <User name={(isLoggedIn) => isLoggedIn ? 'VedaGna' : 'Guest'}/>
+                <User render={(isLoggedIn) => isLoggedIn ? 'VedaGna' : 'Guest'}/> */}
             </div>
         )
     }
