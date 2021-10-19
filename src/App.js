@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
 import './App.css';
-import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
+import RenderPropsClickCounter from './components/RenderPropsClickCounter';
+import RenderPropsHoverCounter from './components/RenderPropsHoverCounter';
+
 export class App extends Component {
     render() {
         return (
             <div className="App">
-                <ClickCounter name='VedaGna'/>
-                <HoverCounter name='VedaGna' />
+                <RenderPropsClickCounter/>
+                <RenderPropsHoverCounter/>
             </div>
         )
     }
