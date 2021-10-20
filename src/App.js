@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './App.css';
+import ClassCounter from './components/ClassCounter';
 
-export class App extends Component {
-    render() {
-        return (
-            <div className="App">
-                <h1>React Hooks</h1>
-            </div>
-        )
-    }
+function App() {
+    return (
+        <div className='App'>
+            <ClassCounter/>
+        </div>
+    )
 }
-export default App;
+
+export default App
