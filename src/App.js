@@ -1,11 +1,12 @@
 import React from 'react'
 import './App.css';
-import HookCounter from './components/HookCounter';
+import HookUseState from './components/HookUseState';
 function App() {
     return (
         <div className='App'>
-            <HookCounter />
+          <HookUseState/>
         </div>
     )
 }
+
 export default App
