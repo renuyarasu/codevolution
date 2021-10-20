@@ -3,12 +3,18 @@ import React, { useState } from 'react'
 function HookCounter() {
     const initialCount = 0
     const [count, setCount] = useState(initialCount)
+    const incrementFive = () => {
+        for (let i = 0; i < 5; i++) {
+            setCount(previusCount => previusCount + 1);
+        }
+    }
     return (
         <div>
-            Count: {count}<br/><br/>
+            <h1>Count: {count}</h1>
             <button onClick={() => setCount(initialCount)}>Reset</button>
-            <button onClick={() => setCount(count + 1)}>Decrement</button>
-            <button onClick={() => setCount(count - 1)}>Increment</button>
+            <button onClick={() => setCount(previusCount => previusCount + 1)}>Decrement</button>
+            <button onClick={() => setCount(previusCount => previusCount - 1)}>Increment</button>
+            <button onClick={incrementFive}>Increment 5</button>
         </div>
     )
 }
