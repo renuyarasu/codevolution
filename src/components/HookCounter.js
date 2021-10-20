@@ -1,20 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
 function HookCounter() {
-    const initialCount = 0
-    const [count, setCount] = useState(initialCount)
-    const incrementFive = () => {
-        for (let i = 0; i < 5; i++) {
-            setCount(previusCount => previusCount + 1);
-        }
-    }
+    const [name, setName] = useState({ firstName: '', lastName: '' })
     return (
         <div>
-            <h1>Count: {count}</h1>
-            <button onClick={() => setCount(initialCount)}>Reset</button>
-            <button onClick={() => setCount(previusCount => previusCount + 1)}>Decrement</button>
-            <button onClick={() => setCount(previusCount => previusCount - 1)}>Increment</button>
-            <button onClick={incrementFive}>Increment 5</button>
+            <form action="">
+                <input type="text" value={name.firstName} onChange={e => setName({ ...name, firstName: e.target.value })} />
+                <input type="text" value={name.lastName} onChange={e => setName({ ...name, lastName: e.target.value })} />
+                <h2>Your First Name: {name.firstName}</h2>
+                <h2>Your Last Name: {name.lastName}</h2>
+                <h1>{JSON.stringify(name)}</h1>
+            </form>
         </div>
     )
 }
