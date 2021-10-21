@@ -16,7 +16,11 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',monospace;
 }
-button {
+button,
+input,
+optgroup,
+select,
+textarea {
  padding: 10px 20px;
  font-weight: bold;
  cursor: pointer;
