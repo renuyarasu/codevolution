@@ -1,26 +1,13 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect } from 'react';
 
-export class HookUseEffect extends Component {
-    constructor(props) {
-        super(props)
-
-        this.state = {
-            count: 0
-        }
-    }
-    componentDidMount(){
-        document.title = `Clicked ${this.state.count} Times`
-    }
-    componentDidUpdate(prevProps, prevState){
-        document.title = `Clicked ${this.state.count} Times`
-    }
-    render() {
-        return (
-            <div>
-                <button onClick={() => this.setState({ count: this.state.count + 1})}>Click {this.state.count} Times</button>
-            </div>
-        )
-    }
+export default function HookUseEffect() {
+    const [count, setCount] = useState(0)
+    useEffect(() => {
+        document.title= `Clicked ${count} Times`
+    })
+    return (
+        <div>
+            <button onClick={() =>setCount(count +1)}>Clicked {count}</button>
+        </div>
+    )
 }
-
-export default HookUseEffect
