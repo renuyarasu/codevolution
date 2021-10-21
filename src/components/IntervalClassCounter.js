@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 export class IntervalClassCounter extends Component {
     constructor(props) {
         super(props)
-
         this.state = {
             count: 0
         }
