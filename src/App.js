@@ -1,14 +1,12 @@
 import React from 'react'
 import './App.css';
-import ClassCounter from './components/ClassCounter';
-import HookUseEffect from './components/HookUseEffect';
+import ClassMouseMove from './components/ClassMouseMove';
 function App() {
-    return (
-        <div className='App'>
-          {/* <ClassCounter/> */}
-          <HookUseEffect/>
-        </div>
-    )
+  return (
+    <div className='App'>
+      <ClassMouseMove />
+    </div>
+  )
 }
 
 export default App
