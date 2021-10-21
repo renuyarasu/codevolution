@@ -1,10 +1,12 @@
 import React from 'react'
 import './App.css';
 import ClassMouseMove from './components/ClassMouseMove';
+import HookMouseMove from './components/HookMouseMove';
 function App() {
   return (
     <div className='App'>
-      <ClassMouseMove />
+      {/* <ClassMouseMove /> */}
+      <HookMouseMove/>
     </div>
   )
 }
