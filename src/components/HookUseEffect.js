@@ -1,31 +1,18 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect } from 'react';
 
-export class HookUseEffect extends Component {
-    constructor(props) {
-        super(props)
-
-        this.state = {
-            count: 0,
-            name: ''
-        }
-    }
-    componentDidMount() {
-        document.title = `Clicked ${this.state.count} Times`
-    }
-    componentDidUpdate(prevProps, prevState) {
-        if (prevState.count !== this.state.count) {
-            console.log('Updating document title');
-            document.title = `Clicked ${this.state.count} Times`
-        }
-    }
-    render() {
-        return (
-            <div>
-                <input type="text" value={this.state.name} onChange={e => { this.setState({ name: e.target.value }) }} />
-                <button onClick={() => this.setState({ count: this.state.count + 1 })}>Clicke {this.state.count} Times</button>
-            </div>
-        )
-    }
+function HookUseEffect() {
+    const [count, setCount] = useState(0)
+    const [name, setName] = useState('')
+    useEffect(() => {
+        console.log('useEffect - Changing Document Title');
+        document.title = `You Clicked ${count} Times`
+    }, [count])
+    return (
+        <div>
+            <input type="text" value={name} onChange={e => setName(e.target.value)} />
+            <button onClick={() => setCount(count + 1)}>Click {count} Times</button>
+        </div>
+    )
 }
 
 export default HookUseEffect
