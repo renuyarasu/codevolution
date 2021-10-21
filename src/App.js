@@ -1,10 +1,10 @@
 import React from 'react'
 import './App.css';
-import HookUseState from './components/HookUseState';
+import HookUseEffect from './components/HookUseEffect';
 function App() {
     return (
         <div className='App'>
-          <HookUseState/>
+          <HookUseEffect/>
         </div>
     )
 }
