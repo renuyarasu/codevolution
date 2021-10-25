@@ -1,10 +1,15 @@
 import React from 'react'
 import './App.css';
-import DataFetching from './components/DataFetching';
+import ComponentC from './components/ComponentC';
+
+export const UserContext = React.createContext()
+
 function App() {
   return (
     <div className='App'>
-      <DataFetching />
+      <UserContext.Provider value={'VedaGna'}>
+        <ComponentC />
+      </UserContext.Provider>
     </div>
   )
 }
