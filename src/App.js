@@ -3,15 +3,15 @@ import './App.css';
 import ComponentC from './components/ComponentC';
 
 export const UserContext = React.createContext()
-export const ChannelContext = React.createContext()
+export const NameContext = React.createContext()
 
 function App() {
   return (
     <div className='App'>
-      <UserContext.Provider value={'VedaGna'}>
-        <ChannelContext.Provider value={'Yarasu'}>
+      <UserContext.Provider value={'Vedana'}>
+        <NameContext.Provider  value={'Yarasu'}>
           <ComponentC />
-        </ChannelContext.Provider>
+        </NameContext.Provider>
       </UserContext.Provider>
     </div>
   )
