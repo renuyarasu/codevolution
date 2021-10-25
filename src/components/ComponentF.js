@@ -1,5 +1,5 @@
 import React from 'react'
-import { UserContext } from '../App'
+import { UserContext, ChannelContext } from '../App'
 
 function ComponentF() {
     return (
@@ -7,7 +7,15 @@ function ComponentF() {
             <UserContext.Consumer>
                 {
                     user => {
-                        return <h1>UserContext Value {user}</h1>
+                        return (
+                            <ChannelContext.Consumer>
+                                {
+                                    channel => {
+                                        return <h1>User Context Value {user}, <br/> Channel Context Value {channel}.</h1>
+                                    }
+                                }
+                            </ChannelContext.Consumer>
+                        )
                     }
                 }
             </UserContext.Consumer>
