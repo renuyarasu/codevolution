@@ -2,6 +2,7 @@ import React, { useCallback, useState } from 'react'
 import Button from './Button'
 import Count from './Count'
 import Title from './Title'
+// When useCallback Hook in React: https://kentcdodds.com/blog/usememo-and-usecallback
 
 function ParentComponent() {
     const [age, setAge] = useState(25)
