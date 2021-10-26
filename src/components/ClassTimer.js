@@ -14,13 +14,14 @@ export class ClassTimer extends Component {
             this.setState(prevState => ({ timer: prevState.timer + 1 }))
         }, 1000)
     }
-    componentWillUnmount(){
+    componentWillUnmount() {
         clearInterval(this.interval)
     }
     render() {
         return (
             <div>
-                <h1>Class Timer: {this.state.timer}</h1> 
+                <h1>Class Timer: {this.state.timer}</h1>
+                <button onClick={() => clearInterval(this.interval)}>Clear Timer</button>
             </div>
         )
     }
