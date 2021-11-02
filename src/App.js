@@ -1,14 +1,10 @@
 import React from 'react'
 import './App.css';
-import HookTimer from './components/HookTimer';
-// import ClassTimer from './components/ClassTimer';
-// import InputFocus from './components/InputFocus';
+import DocTitleOne from './components/DocTitleOne';
 const App = () => {
   return (
     <div className='App'>
-     {/* <InputFocus/> 
-     <ClassTimer/>*/}
-     <HookTimer/>
+      <DocTitleOne />
     </div>
   )
 }
