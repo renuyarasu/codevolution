@@ -4,7 +4,6 @@ export class ClassTimer extends Component {
     interval
     constructor(props) {
         super(props)
-
         this.state = {
             timer: 0
         }

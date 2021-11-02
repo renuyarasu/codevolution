@@ -1,11 +1,14 @@
 import React from 'react'
 import './App.css';
-import ClassTimer from './components/ClassTimer';
-
-function App() {
+import HookTimer from './components/HookTimer';
+// import ClassTimer from './components/ClassTimer';
+// import InputFocus from './components/InputFocus';
+const App = () => {
   return (
     <div className='App'>
-      <ClassTimer />
+     {/* <InputFocus/> 
+     <ClassTimer/>*/}
+     <HookTimer/>
     </div>
   )
 }
