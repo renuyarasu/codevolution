@@ -1,13 +1,11 @@
 import React from 'react'
 import './App.css';
-import CounterOne from './components/CounterOne';
-import CounterTwo from './components/CounterTwo';
+import UserForm from './components/UserForm';
 
 const App = () => {
   return (
     <div className='App'>
-      <CounterOne />
-      <CounterTwo/>
+      <UserForm />
     </div>
   )
 }
